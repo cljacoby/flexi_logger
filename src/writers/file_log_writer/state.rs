@@ -10,7 +10,7 @@ use super::{Config, FilenameConfig, RotationConfig};
 
 const CURRENT_INFIX: &str = "";
 fn number_infix(idx: u32) -> String {
-    format!("_r{:0>5}", idx)
+    format!(".{}", idx)
 }
 
 //  Describes the latest existing numbered log file.
